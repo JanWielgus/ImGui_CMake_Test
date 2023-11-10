@@ -12,6 +12,7 @@ set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 target_link_libraries(ImGuiTest1 glfw)
 
 # OpenGL
+set(OpenGL_GL_PREFERENCE GLVND) # This is only needed when more than one OpenGL is found (LEGACY and GLVND)
 find_package(OpenGL REQUIRED)
 target_link_libraries(ImGuiTest1 OpenGL::GL)
 
