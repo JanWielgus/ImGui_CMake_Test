@@ -17,4 +17,7 @@ cmake .. -G Ninja
 cmake --build .
 ./ImGuiTest1.exe
 ```
+
+Interesting article on CMake: https://kubasejdak.com/19-reasons-why-cmake-is-actually-awesome
+
 Also generated and tested with `Visual Studio 16 2019` generator.
